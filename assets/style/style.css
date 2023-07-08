@@ -10,6 +10,7 @@
     --text-color:#6c757d;
     --accent-color:#ffd333;
     --contrast-color:#3d464d;
+    --gray-color:#ccc;
 }
 
 html, body {
@@ -39,15 +40,43 @@ img{
     height: auto;
 }
 
-.btn, .dropdown-menu{
+.btn, .dropdown-menu,
+.form-control{
     border-radius: 0;
 }
 
+.form-control:focus {
+    color: var(--text-color);
+    border-color: var(--accent-color);
+    box-shadow: none;
+}
+
+.bg-warning{
+/*  */
+}
+
+.form-control::placeholder{
+    color: var(--gray-color);
+}
 
 .wrapper{
     min-height: 100%;
     display: flex;
     flex-direction: column;
+}
+
+.btn-warning{
+    border-color: var(--accent-color);
+}
+
+.btn-outline-warning:hover{
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+}
+
+.cart-buttons a:focus,
+.cart-buttons button:focus{
+    box-shadow: none; 
 }
 
 .main{
@@ -99,4 +128,24 @@ ul.social-icons a:hover{
 
 .header-logo{
     text-decoration: none;
+    text-transform: uppercase;
+    color: var(--contrast-color);
+    transition: all 0.3s;
 }
+
+.header-logo:hover{
+    color: var(--accent-color);
+}
+
+.cart-buttons .btn span {
+    color: var(--contrast-color);
+}
+
+.cart-buttons .btn {
+    transition: 0.5s;
+}
+
+.cart-buttons .btn:hover {
+    border: 1px solid #000;
+}
+
