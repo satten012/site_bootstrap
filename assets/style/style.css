@@ -185,6 +185,18 @@ ul.social-icons a:hover{
     box-shadow: none;
 }
 
+/* Main */
+
+/* carousel */
+.carousel-caption{
+   text-shadow:rgba(0, 0, 0, 1) 1px 4px 4px;
+}
+
+.carousel-caption p {
+    letter-spacing: 0.1rem;
+}
+
+
 @media only screen and (min-width: 992px){
     .header-bottom .navbar .dropdown-menu-end{
         margin-left: 0;
