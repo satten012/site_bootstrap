@@ -83,6 +83,32 @@ img{
     flex: 1 1 auto; /* flex-grow (сколько свободного пространства)  flex-shrink(фактор сжатия   flex basis(задает базовый размер)*/
 }
 
+section{
+    padding: 50px 10px;
+}
+
+.section-title{
+    position: relative;
+    text-transform: uppercase;
+    color:var(--contrast-color);
+    font-weight: 700;
+}
+
+.section-title span {
+    background-color: var(--bg-color);
+/*     padding-right: 1rem; */
+}
+
+.section-title::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    top: 50%;
+    left: 0;
+    border-top: 1px dashed var(--text-color);
+    z-index: -1;
+}
+
 /* Хедер стили */
 
 .header-top-phone a {
@@ -194,6 +220,31 @@ ul.social-icons a:hover{
 
 .carousel-caption p {
     letter-spacing: 0.1rem;
+}
+
+/* Advantages */
+
+.advantages .items{
+    margin-top: 50px;
+}
+
+.advantages .items .item{
+    background-color: white;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: all .5s;
+}
+
+.advantages .items .item:hover{
+box-shadow: 0 15px 30px -20px rgba(0, 0, 0, 0.5);
+}
+
+.advantages i{
+    font-size: 70px;
+    color: var(--accent-color);
 }
 
 
