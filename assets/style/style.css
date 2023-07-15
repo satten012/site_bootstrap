@@ -208,7 +208,12 @@ ul.social-icons a:hover{
     margin-top: 7px;
 }
 .navbar-toggler:focus{
-    box-shadow: none;
+    box-shadow: none; 
+}
+
+.headernav-scroll.headernav-bottom .navbar .offcanvas:not(.show) .nav-link {
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 /* Main */
@@ -259,7 +264,7 @@ box-shadow: 0 15px 30px -20px rgba(0, 0, 0, 0.5);
     }
 }
 
-@media only screen and (max-width: 992px){
+@media only screen and (max-width: 991.98px){
     .header-bottom .navbar .dropdown-menu-end{
         padding-left: 1rem;
     }
