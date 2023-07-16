@@ -211,10 +211,13 @@ ul.social-icons a:hover{
     box-shadow: none; 
 }
 
-.headernav-scroll.headernav-bottom .navbar .offcanvas:not(.show) .nav-link {
-    padding-top: 2px;
-    padding-bottom: 2px;
+.headernav-scroll.header-bottom .navbar .nav-link {
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
+
+
+
 
 /* Main */
 
@@ -250,6 +253,12 @@ box-shadow: 0 15px 30px -20px rgba(0, 0, 0, 0.5);
 .advantages i{
     font-size: 70px;
     color: var(--accent-color);
+}
+
+.product{
+    width: 100%;
+    height: 200px;
+    background-color: #ffd333;
 }
 
 
