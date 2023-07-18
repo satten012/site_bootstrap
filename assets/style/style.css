@@ -299,9 +299,10 @@ box-shadow: 0 15px 30px -20px rgba(0, 0, 0, 0.5);
 }
 
 .product-thumb img {
-    max-height: 250px;
-
+    max-height: 220px;
 }
+
+
 
 .product-details{
     padding: 10px 20px;
@@ -330,6 +331,7 @@ box-shadow: 0 15px 30px -20px rgba(0, 0, 0, 0.5);
 .product-excerpt {
     height: 45px;
     overflow: hidden;
+    display: -webkit-box;
     -webkit-line-clamp: 2; /* указывает к-во строк если текст больше, тогда в конце строки будет ...  */
     -webkit-box-orient: vertical;
     text-decoration: none;
