@@ -98,6 +98,8 @@ section{
 
 .section-title span {
     background-color: var(--bg-color);
+    position: relative;
+    z-index: 1;
 /*     padding-right: 1rem; */
 }
 
@@ -108,7 +110,7 @@ section{
     top: 50%;
     left: 0;
     border-top: 1px dashed var(--text-color);
-    z-index: -1;
+/*     z-index: -1; */
 }
 
 /* Хедер стили */
@@ -360,6 +362,13 @@ box-shadow: 0 15px 30px -20px rgba(0, 0, 0, 0.5);
 }
 
 
+.owl-item{
+    transition: all .3s;
+}
+
+.owl-stage .owl-item:hover{
+    box-shadow: 0 15px 50px -20px rgba(0, 0, 0, 0.8);
+    }
 
 
 .offer-hit{
@@ -367,6 +376,24 @@ box-shadow: 0 15px 30px -20px rgba(0, 0, 0, 0.5);
 }
 .offer-new{
     background-color: var(--accent-color);
+}
+
+/* About Us */
+
+.about-us{
+    background-color: #ffff;
+}
+
+.about-us .section-title span {
+    background-color: #fff;
+}
+
+.about-us-description{
+    text-align: justify;
+}
+
+footer{
+    background-color: #ee6e73;
 }
 
 
