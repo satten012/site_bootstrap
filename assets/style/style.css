@@ -302,8 +302,6 @@ box-shadow: 0 15px 30px -20px rgba(0, 0, 0, 0.5);
     max-height: 220px;
 }
 
-
-
 .product-details{
     padding: 10px 20px;
 }
@@ -356,7 +354,10 @@ box-shadow: 0 15px 30px -20px rgba(0, 0, 0, 0.5);
     font-size: 0.8rem;
 }
 
-
+.owl-carousel-full .owl-item img {
+    display: inline-block;
+    width: auto;
+}
 
 
 
