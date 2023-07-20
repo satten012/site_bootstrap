@@ -128,9 +128,11 @@
                             Dropdown button
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item closecart" data-href="footer">Footer</a></li>
+                            <li><a class="dropdown-item closecart" data-href="about">About</a>
+                            </li>
+                            <li><a class="dropdown-item closecart" data-href="map">Map</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -847,7 +849,7 @@
 
             </section>
 
-            <section class="about-us">
+            <section class="about-us" id="about">
                 <div class="container-fluid px-lg-5">
                     <div class="row mb-5">
                         <div class="col-12">
@@ -884,17 +886,59 @@
                 </div>
             </section>
 
-            <iframe
+            <iframe id="map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3697.754775753435!2d30.5234996069672!3d50.45466227255904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf5a71cfc97b%3A0x8fdf95d9efaf056d!2zSG9zdGVsIOKAnFByZXN0aWdl4oCdINCl0L7RgdGC0LXQuw!5e0!3m2!1sru!2sua!4v1689791220827!5m2!1sru!2sua"
                 width="100%" height="450" style="border:0; display: block;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
+
         </main>
 
+        <footer class="footer" id="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <h4>Information</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html"></a></li>
+                            <li><a href="#">Payment</a></li>
+                            <li><a href="#">Delivery</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ul>
+                    </div>
 
-        <footer class="footer">
+                    <div class="col-md-3 col-6">
+                        <h4>Working hours</h4>
+                        <ul class="list-unstyled">
+                            <li>Kiev st khreshatic</li>
+                            <li>mon-fri: 9:00 - 18:00</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3 col-6">
+                        <h4>Contacts</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="tel:0662506636">066-250-66-36</a></li>
+                            <li><a href="tel:0662503666">066-250-36-66</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3 col-6">
+                        <h4>Follow us</h4>
+                        <ul class="footer-icons">
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
+
+    <button id="top">
+        <i class="fa-solid fa-angles-up"></i>
+    </button>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>

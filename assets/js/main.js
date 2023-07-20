@@ -2,6 +2,31 @@ window.addEventListener("scroll", function(){
     const headerNav = this.document.getElementById ("header-nav").classList.toggle("headernav-scroll", window.scrollY > 135)
 })
 
+/* const offcanvasCartEl = document.getElementById("#offcanvasCart")
+const offcanvasCart =  new bootstrap.Offcanvas(offcanvasCartEl)
+
+document.querySelectorAll(".closecart").forEach(item=> {
+    item.addEventListener("click", (e) => {
+        e.preventDefault
+        console.log("test")
+    })
+})
+ */
+
+const offcanvasCartEl = document.getElementById("offcanvasCart")
+const offcanvasCart = new bootstrap.Offcanvas(offcanvasCartEl)
+
+document.querySelectorAll(".closecart").forEach(item => {
+    item.addEventListener("click", (e) =>{
+        e.preventDefault;
+        offcanvasCart.hide()
+        let href = item.dataset.href;
+        offcanvasCartEl.addEventListener('hidden.bs.offcanvas', () => {
+            document.getElementById(href).scrollIntoView({ behavior: 'smooth' });
+          })
+    })
+})
+
 $(document).ready(function(){
     $(".owl-carousel-full").owlCarousel({
         margin:20,
@@ -20,4 +45,22 @@ $(document).ready(function(){
             }
         }
     });
-  });
+});
+
+const scrollTop = document.getElementById("top")
+
+window.addEventListener("scroll", function(){
+   if(window.scrollY > 350){
+    scrollTop.style.display = "block"
+   }
+   else{
+    scrollTop.style.display = "none"
+   }
+})
+
+scrollTop.addEventListener("click", function(){
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+})
