@@ -79,26 +79,11 @@
             <div class="header-middle bg-white py-4">
                 <div class="container-fluid">
                     <div class="row align-items-center">
-                        <div class="col-sm-6 col-lg-4">
+                        <div class="col-sm-8">
                             <a href="index.html" class="header-logo h1">E-Shop</a>
                         </div>
-                        <div class="col-lg-4 cart-buttons text-end order-md-2 d-none d-lg-block">
-                            <a href="#" class="btn p-1">
-                                <i class="fa-solid fa-heart"></i>
-                                <span class="badge cart-badge bg-warning rounded-circle">333</span>
-                            </a>
 
-                            <button class="btn p-1" type="button" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                                <span class="badge cart-badge bg-warning rounded-circle">5</span>
-                            </button>
-
-
-
-                        </div>
-
-                        <div class="col-lg-4 col-sm-6 order-md-1 mt-2 mt-md-0">
+                        <div class="col-sm-4 mt-2 mt-md-0">
                             <form action="">
                                 <div class="input-group">
                                     <input type="text" class="form-control" name="search" placeholder="Searching..."
@@ -112,31 +97,6 @@
                 </div>
             </div><!--header-middle-->
 
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart"
-                aria-labelledby="offcanvasExampleLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Cart</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <div>
-                        Some text as placeholder. In real life you can have the elements you have
-                        chosen. Like, text, images, lists, etc.
-                    </div>
-                    <div class="dropdown mt-3">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                            Dropdown button
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item closecart" data-href="footer">Footer</a></li>
-                            <li><a class="dropdown-item closecart" data-href="about">About</a>
-                            </li>
-                            <li><a class="dropdown-item closecart" data-href="map">Map</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
         </header>
 
         <div class="header-bottom sticky-top" id="header-nav">
@@ -210,14 +170,14 @@
                         </div>
                     </div>
 
-                    <div class="d-block d-lg-none">
+                    <div>
                         <a href="#" class="btn p-1">
                             <i class="fa-solid fa-heart"></i>
                             <span class="badge text-bg-warning cart-badge bg-warning rounded-circle">333</span>
                         </a>
 
-                        <button class="btn p-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
-                            aria-controls="offcanvasCart">
+                        <button class="btn p-1" id="cart-open" type="button" data-bs-toggle="offcanvas2"
+                            data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
                             <i class="fa-solid fa-cart-shopping"></i>
                             <span class="badge text-bg-warning cart-badge bg-warning rounded-circle">5</span>
                         </button>
@@ -227,6 +187,74 @@
             </nav>
         </div>
         <!-- ./header-bottom -->
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Cart</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="table-responsive">
+                    <table class="table offcanvasCart-table">
+                        <tbody>
+                            <tr>
+                                <td class="product-img-td"><a href="#"><img src="assets/img/products/1.jpg" alt=""></a>
+                                </td>
+                                <td><a href="#">Lorem
+                                        ipsum dolor sit, amet consectetur adipisicing elit. Esse, placeat.</a></td>
+                                <td>$65</td>
+                                <td>&times;1</td>
+                                <td><button class="btn btn-danger"> <i class="fa-regular fa-circle-xmark"></i> </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="product-img-td"><a href="#"><img src="assets/img/products/3.jpg" alt=""></a>
+                                </td>
+                                <td><a href="#">Lorem
+                                        ipsum dolor sit</a></td>
+                                <td>$65</td>
+                                <td>&times;1</td>
+                                <td><button class="btn btn-danger"> <i class="fa-regular fa-circle-xmark"></i> </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="product-img-td"><a href="#"><img src="assets/img/products/5.jpg" alt=""></a>
+                                </td>
+                                <td><a href="#">Lorem
+                                        ipsum dolor sit.</a></td>
+                                <td>$65</td>
+                                <td>&times;1</td>
+                                <td><button class="btn btn-danger"> <i class="fa-regular fa-circle-xmark"></i> </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="4" class="text-end">Total:</td>
+                                <td>$325</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+                <div class="text-end mt-2">
+                    <a href="#" class="btn btn-outline-warning">Cart</a>
+                    <a href="#" class="btn btn-outline-secondary">Checkout</a>
+                </div>
+                <div class="dropdown mt-3">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        Dropdown button
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item closecart" data-href="footer">Footer</a></li>
+                        <li><a class="dropdown-item closecart" data-href="about">About</a>
+                        </li>
+                        <li><a class="dropdown-item closecart" data-href="map">Map</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
         <main class="main">
             <div id="carousel" class="carousel slide " data-bs-ride="carousel">
@@ -885,7 +913,6 @@
                     </div>
                 </div>
             </section>
-
             <iframe id="map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3697.754775753435!2d30.5234996069672!3d50.45466227255904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf5a71cfc97b%3A0x8fdf95d9efaf056d!2zSG9zdGVsIOKAnFByZXN0aWdl4oCdINCl0L7RgdGC0LXQuw!5e0!3m2!1sru!2sua!4v1689791220827!5m2!1sru!2sua"
                 width="100%" height="450" style="border:0; display: block;" allowfullscreen="" loading="lazy"

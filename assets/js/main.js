@@ -2,21 +2,26 @@ window.addEventListener("scroll", function(){
     const headerNav = this.document.getElementById ("header-nav").classList.toggle("headernav-scroll", window.scrollY > 135)
 })
 
-/* const offcanvasCartEl = document.getElementById("#offcanvasCart")
-const offcanvasCart =  new bootstrap.Offcanvas(offcanvasCartEl)
 
-document.querySelectorAll(".closecart").forEach(item=> {
-    item.addEventListener("click", (e) => {
-        e.preventDefault
-        console.log("test")
-    })
-})
- */
-
+/* скролл */
 const offcanvasCartEl = document.getElementById("offcanvasCart")
 const offcanvasCart = new bootstrap.Offcanvas(offcanvasCartEl)
 
-document.querySelectorAll(".closecart").forEach(item => {
+document.getElementById("cart-open").addEventListener("click", (e) => {
+    e.preventDefault();
+    offcanvasCart.toggle();
+})
+
+document.querySelectorAll('.closecart').forEach(item => {
+    item.addEventListener("click", (e) => {
+        e.preventDefault()
+        offcanvasCart.hide();
+        let href = item.dataset.href;
+        document.getElementById(href).scrollIntoView()
+    });
+})
+
+/* document.querySelectorAll(".closecart").forEach(item => {
     item.addEventListener("click", (e) =>{
         e.preventDefault;
         offcanvasCart.hide()
@@ -25,7 +30,7 @@ document.querySelectorAll(".closecart").forEach(item => {
             document.getElementById(href).scrollIntoView({ behavior: 'smooth' });
           })
     })
-})
+}) */
 
 $(document).ready(function(){
     $(".owl-carousel-full").owlCarousel({
