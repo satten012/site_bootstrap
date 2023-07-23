@@ -113,7 +113,7 @@ section{
 /*     z-index: -1; */
 }
 
-/* Хедер стили */
+/* ========================================= Хедер ======================================== */
 
 .header-top-phone a {
     text-decoration: none;
@@ -238,12 +238,9 @@ ul.social-icons a:hover{
     padding-bottom: 8px;
 }
 
+/* =============================================== Main ============================================ */
 
-
-
-/* Main */
-
-/* carousel */
+/* ============================================== carousel ========================================== */
 .carousel-caption{
    text-shadow:rgba(0, 0, 0, 1) 1px 4px 4px;
 }
@@ -252,7 +249,7 @@ ul.social-icons a:hover{
     letter-spacing: 0.1rem;
 }
 
-/* Advantages */
+/* ================================================ Advantages ========================================*/
 
 .advantages .items{
     margin-top: 50px;
@@ -283,7 +280,8 @@ box-shadow: 0 15px 30px -20px rgba(0, 0, 0, 0.5);
     background-color: #ffd333;
 }
 
-/* product card */
+/* ========================================= product card ============================================*/
+
 .product-card {
     transition: all .3s;
     border: 1px solid var(--gray-color);
@@ -396,13 +394,14 @@ box-shadow: 0 15px 30px -20px rgba(0, 0, 0, 0.5);
     background-color: var(--accent-color);
 }
 
-/* About Us */
+/* ======================================= About Us ========================================== */
 
 .about-us{
     background-color: #ffff;
 }
 
-.about-us .section-title span {
+.about-us .section-title span,
+.sidebar .section-title span {
     background-color: #fff;
 }
 
@@ -410,7 +409,7 @@ box-shadow: 0 15px 30px -20px rgba(0, 0, 0, 0.5);
     text-align: justify;
 }
 
-/* Footer  */
+/* ========================================== Footer ========================================== */
 footer{
     background-color: var(--contrast-color);
     padding: 50px 15px;
@@ -461,7 +460,70 @@ footer a:hover {
     opacity: 1;
 }
 
+.sidebar {
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem ;
+}
 
+/* ======================= Category Page ======================== */
+    
+.breadcrumbs{
+    margin: 30px 0;
+    background-color: #fff;
+    padding: 1rem;
+}
+
+.breadcrumbs ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    color: var(--contrast-color);
+    transition: all .5s;
+    margin-right: 0.5rem;
+}
+
+.breadcrumbs a:hover{
+    color: var(--accent-color);    
+}
+
+.breadcrumbs a::after{
+    content: "/";
+    padding-left: 0.5rem;
+    color: var(--contrast-color);
+}
+
+.filter-block:not(:last-child){
+    margin-bottom: 2rem;
+}
+
+.filter-block .form-check{
+    margin-bottom: .5rem;
+}
+
+.form-check-input[type="checkbox"]{
+    border-radius: 0;
+    border-color: var(--gray-color);
+}
+
+.form-check-input:focus{
+    border-color: var(--gray-color);
+    box-shadow: none;
+}
+
+.form-check-input:checked{
+    background-color: var(--accent-color);
+    border-color: var(--accent-color) ;
+}
+
+.filter-block .badge {
+    color: var(--text-color);
+}
 
 
 
