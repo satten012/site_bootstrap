@@ -69,3 +69,17 @@ scrollTop.addEventListener("click", function(){
         behavior:"smooth"
     });
 })
+
+
+const arr = [10, 15, 18, 22.5, 18]
+let minArr = 100
+
+
+function functionMinArr(){
+    for (i = 0; i < arr.length; i++){
+        if (arr[i] < minArr){
+            minArr = arr[i]
+        }
+    }
+    console.log("min arr :" + minArr) 
+}
