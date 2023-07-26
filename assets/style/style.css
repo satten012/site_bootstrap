@@ -401,7 +401,8 @@ box-shadow: 0 15px 30px -20px rgba(0, 0, 0, 0.5);
 }
 
 .about-us .section-title span,
-.sidebar .section-title span {
+.sidebar .section-title span,
+.product-content .section-title span {
     background-color: #fff;
 }
 
@@ -552,6 +553,12 @@ footer a:hover {
 
 .sidebar .collapse-filters-btn{
     color: var(--contrast-color);
+}
+
+/* product page */
+
+.product-content .product-price {
+    font-size: 25px;
 }
 
 
