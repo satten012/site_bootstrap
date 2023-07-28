@@ -402,7 +402,8 @@ box-shadow: 0 15px 30px -20px rgba(0, 0, 0, 0.5);
 
 .about-us .section-title span,
 .sidebar .section-title span,
-.product-content .section-title span {
+.product-content .section-title span,
+.page-register .section-title span {
     background-color: #fff;
 }
 
@@ -619,5 +620,12 @@ footer a:hover {
     .sidebar .collapse-filters-btn{
         display: none;
         color: var(--contrast-color);
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .product-content-details .nav-tabs .nav-link{
+        padding-left: 8px;
+        padding-right: 8px;
     }
 }
