@@ -249,6 +249,12 @@ ul.social-icons a:hover{
     letter-spacing: 0.1rem;
 }
 
+label.required::before{
+    content: "* ";
+    color: #dc3545;
+    font-weight: bold;
+}
+
 /* ================================================ Advantages ========================================*/
 
 .advantages .items{
