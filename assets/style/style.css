@@ -628,8 +628,17 @@ footer a:hover {
 }
 
 
-
 /* CART  */
+
+.btn-coupon{
+    color: var(--text-color);
+    transition: .5s;
+    text-decoration: none;
+} 
+
+.btn-coupon:hover{
+    color: var(--contrast-color);
+} 
 
 @media only screen and (min-width: 992px){
     .header-bottom .navbar .dropdown-menu-end{
