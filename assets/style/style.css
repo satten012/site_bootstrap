@@ -47,11 +47,14 @@ img{
 }
 
 .btn, .dropdown-menu,
-.form-control{
+.form-control,
+.form-select{
     border-radius: 0;
 }
 
-.form-control:focus {
+.form-control:focus, 
+.form-select:focus
+{
     color: var(--text-color);
     border-color: var(--accent-color);
     box-shadow: none;
@@ -559,9 +562,9 @@ footer a:hover {
     box-shadow: none;
 }
 
-.form-select:focus{
+/* .form-select:focus{
     border-color: var(--bs-border-color);
-}
+} */
 
 .sidebar .collapse-filters-btn{
     color: var(--contrast-color);

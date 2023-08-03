@@ -327,10 +327,64 @@
                             </div>
 
                             <div class="col-lg-4 mb-3">
-                                <div class="cart-summary p-3 sidebar">
-                                    <h5 class="section-title"><span>Cart Summary</span></h5>
-                                    <div class="d-grid">
-                                        <a href="#" class="btn btn-warning">Checkout</a>
+                                <div class="cart-summary p-3 sidebar h-100">
+                                    <h5 class="section-title"><span>Order Total</span></h5>
+
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Product</th>
+                                                    <th>Total</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                        <small>($65)x1</small>
+                                                    </td>
+                                                    <td class="text-end">$65</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Product 2
+                                                        <small>($80)x2</small>
+                                                    </td>
+                                                    <td class="text-end">$160</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Product 3
+                                                        <small>($100)x1</small>
+                                                    </td>
+                                                    <td class="text-end">$100</td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <td colspan="2" class="text-end">325</td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                    <div class="form-check">
+                                        <input name="payment-method" class="form-check-input" type="radio"
+                                            name="payment-method1" id="payment-method1" value="payment-method1"
+                                            required>
+                                        <label class="form-check-label" for="payment-method1">
+                                            Card payment
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input name="payment-method" class="form-check-input" type="radio"
+                                            name="payment-method2" id="payment-method2" value="payment-method2"
+                                            required>
+                                        <label class="form-check-label" for="payment-method2">
+                                            Payment pn delivery
+                                        </label>
+                                    </div>
+
+
+                                    <div class="d-grid mt-3">
+                                        <button type="submit" href="#" class="btn btn-warning">Checkout</button>
                                     </div>
                                 </div>
                             </div>
