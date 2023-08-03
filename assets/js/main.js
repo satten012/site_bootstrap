@@ -1,3 +1,5 @@
+
+
 window.addEventListener("scroll", function(){
     const headerNav = this.document.getElementById ("header-nav").classList.toggle("headernav-scroll", window.scrollY > 135)
 })
@@ -19,18 +21,7 @@ document.querySelectorAll('.closecart').forEach(item => {
         let href = item.dataset.href;
         document.getElementById(href).scrollIntoView()
     });
-})
-
-/* document.querySelectorAll(".closecart").forEach(item => {
-    item.addEventListener("click", (e) =>{
-        e.preventDefault;
-        offcanvasCart.hide()
-        let href = item.dataset.href;
-        offcanvasCartEl.addEventListener('hidden.bs.offcanvas', () => {
-            document.getElementById(href).scrollIntoView({ behavior: 'smooth' });
-          })
-    })
-}) */
+});
 
 $(document).ready(function(){
     $(".owl-carousel-full").owlCarousel({
@@ -79,19 +70,15 @@ function functionMinArr(){
     for (i = 0; i < arr.length; i++){
         if (arr[i] < minArr){
             minArr = arr[i]
-        }
-    }
-    console.log("min arr :" + minArr) 
-}
+        };
+    };
+    console.log("min arr :" + minArr);
+};
 
-// Example starter JavaScript for disabling form submissions if there are invalid fields
 (() => {
     'use strict'
-  
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    const forms = document.querySelectorAll('.needs-validation')
-  
-    // Loop over them and prevent submission
+
+    const forms = document.querySelectorAll('.needs-validation');
     Array.from(forms).forEach(form => {
       form.addEventListener('submit', event => {
         if (!form.checkValidity()) {
@@ -102,4 +89,4 @@ function functionMinArr(){
         form.classList.add('was-validated')
       }, false)
     })
-  })()
+})()

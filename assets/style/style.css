@@ -32,6 +32,10 @@ a{
     text-decoration: underline;
 }
 
+textarea{
+    resize: none;
+}
+
 a:hover{
     text-decoration: none;
 /*     color: var(--text-color); */
@@ -409,7 +413,8 @@ box-shadow: 0 15px 30px -20px rgba(0, 0, 0, 0.5);
 .about-us .section-title span,
 .sidebar .section-title span,
 .product-content .section-title span,
-.page-register .section-title span {
+.page-register .section-title span,
+.checkout-content  .section-title span{
     background-color: #fff;
 }
 

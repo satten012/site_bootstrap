@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-shop :: Chekout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owlcarousel/owl.theme.default.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <header class="header">
+            <div class="header-top py-1">
+                <!-- использует всю ширину страницы -->
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- 3 колонки каждая из них занимает 1/3  12/4 = 3 -->
+                        <!-- col-md-4 говорит о том, что эти блоки делятся на три равные части когда разрещение >768 px  -->
+                        <div class="col-6 col-sm-4">
+                            <div class="header-top-phone d-flex align-items-center h-100 w-100">
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                <a href="tel:+380662506636" class="ms-2">066-250-66-36</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 d-none d-sm-block">
+                            <ul class="social-icons d-flex justify-content-center">
+                                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-sm-4">
+                            <div class="d-flex justify-content-end ">
+
+                                <div class="btn-group me-2">
+                                    <div class="dropdown">
+                                        <button class="btn btn-sm dropdown-toggle " type="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Account
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="login.html">Sign In</a></li>
+                                            <li><a class="dropdown-item" href="register.html">Sign Up</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="btn-group">
+                                    <div class="dropdown">
+                                        <button class="btn btn-sm dropdown-toggle" type="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            En
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">EN</a></li>
+                                            <li><a class="dropdown-item" href="#">UA</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div><!--header-top-->
+
+            <div class="header-middle bg-white py-4">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-sm-8">
+                            <a href="index.html" class="header-logo h1">E-Shop</a>
+                        </div>
+
+                        <div class="col-sm-4 mt-2 mt-md-0">
+                            <form action="">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="search" placeholder="Searching..."
+                                        aria-label="Searching..." aria-describedby="button-search">
+                                    <button class="btn btn-outline-warning" type="submit" id="button-search"><i
+                                            class="fa-solid fa-magnifying-glass"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div><!--header-middle-->
+
+        </header>
+
+        <div class="header-bottom sticky-top" id="header-nav">
+            <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-start" id="offcanvasNavbar" tabindex="-1"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Catalog</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Payment</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Delivery</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false" data-bs-auto-close="outside">
+                                        Catalog
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                        <li>
+                                            <a class="dropdown-item" href="category.html">Shoes</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="category.html">Jeans</a>
+                                        </li>
+                                        <li class="nav-item dropend">
+                                            <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                                data-bs-auto-close="outside">Sportswear</a>
+                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                <li>
+                                                    <a class="dropdown-item" href="category.html">Men's Sportswear</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="category.html">Women's Sportswear</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="category.html">Baby's Sportswear</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="">Coat</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="">Shirts</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a href="#" class="btn p-1">
+                            <i class="fa-solid fa-heart"></i>
+                            <span class="badge text-bg-warning cart-badge bg-warning rounded-circle">3</span>
+                        </a>
+
+                        <button class="btn p-1" id="cart-open" type="button" data-bs-toggle="offcanvas2"
+                            data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="badge text-bg-warning cart-badge bg-warning rounded-circle">5</span>
+                        </button>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+        <!-- ./header-bottom -->
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Cart</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="table-responsive">
+                    <table class="table offcanvasCart-table">
+                        <tbody>
+                            <tr>
+                                <td class="product-img-td"><a href="#"><img src="assets/img/products/1.jpg" alt=""></a>
+                                </td>
+                                <td><a href="#">Lorem
+                                        ipsum dolor sit, amet consectetur adipisicing elit. Esse, placeat.</a></td>
+                                <td>$65</td>
+                                <td>&times;1</td>
+                                <td><button class="btn btn-danger"> <i class="fa-regular fa-circle-xmark"></i> </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="product-img-td"><a href="#"><img src="assets/img/products/3.jpg" alt=""></a>
+                                </td>
+                                <td><a href="#">Lorem
+                                        ipsum dolor sit</a></td>
+                                <td>$65</td>
+                                <td>&times;1</td>
+                                <td><button class="btn btn-danger"> <i class="fa-regular fa-circle-xmark"></i> </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="product-img-td"><a href="#"><img src="assets/img/products/5.jpg" alt=""></a>
+                                </td>
+                                <td><a href="#">Lorem
+                                        ipsum dolor sit.</a></td>
+                                <td>$65</td>
+                                <td>&times;1</td>
+                                <td><button class="btn btn-danger"> <i class="fa-regular fa-circle-xmark"></i> </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="4" class="text-end">Total:</td>
+                                <td>$325</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+                <div class="text-end mt-2">
+                    <a href="#" class="btn btn-outline-warning">Cart</a>
+                    <a href="#" class="btn btn-outline-secondary">Checkout</a>
+                </div>
+                <div class="dropdown mt-3">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        Dropdown button
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item closecart" data-href="footer">Footer</a></li>
+                        <li><a class="dropdown-item closecart" data-href="about">About</a>
+                        </li>
+                        <li><a class="dropdown-item closecart" data-href="map">Map</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <main class="main">
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="breadcrumbs">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><span>Checkout</span></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+
+
+                    <form action="" class="needs-validation" novalidate>
+                        <div class="row">
+                            <div class="col-lg-8 mb-3">
+                                <div class="checkout-content p-3 h-100 bg-white">
+
+                                    <h1 class="section-title h5"><span>Billing adress</span></h1>
+
+                                    <div class="row g-3">
+                                        <div class="col-sm-6">
+                                            <label for="name" class="form-label">Name</label>
+                                            <input type="text" id="name" name="name" class="form-control"
+                                                placeholder="John Wayne" aria-label="Name" required>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label for="email" class="form-label">Email</label>
+                                            <input type="email" id="email" name="email" class="form-control"
+                                                placeholder="JohnWa@gmail.com" aria-label="Email" required>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label for="phone" class="form-label">Phone</label>
+                                            <input type="tel" id="phone" name="phone" class="form-control"
+                                                placeholder="380 (66) 215 95 47" aria-label="Phone" required>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label for="country" class="form-label">Country</label>
+                                            <select id="country" name="country" class="form-select" aria-label="Country"
+                                                required></select>
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <label for="city" class="form-label">City</label>
+                                            <input type="text" id="city" name="city" class="form-control"
+                                                placeholder="London" aria-label="City" required>
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <label for="adress" class="form-label">Adress</label>
+                                            <input type="text" id="adress" name="adress" class="form-control"
+                                                placeholder="49 Featherstone Street" aria-label="Adress" required>
+                                        </div>
+
+                                        <div class="col">
+                                            <label for="comment" class="form-label">Comment</label>
+                                            <textarea class="form-control" name="comment" id="comment" rows="3"
+                                                placeholder="Order note..."></textarea>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 mb-3">
+                                <div class="cart-summary p-3 sidebar">
+                                    <h5 class="section-title"><span>Cart Summary</span></h5>
+                                    <div class="d-grid">
+                                        <a href="#" class="btn btn-warning">Checkout</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+
+
+                </div>
+
+
+
+        </main>
+
+        <footer class="footer" id="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <h4>Information</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html"></a></li>
+                            <li><a href="#">Payment</a></li>
+                            <li><a href="#">Delivery</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3 col-6">
+                        <h4>Working hours</h4>
+                        <ul class="list-unstyled">
+                            <li>Kiev st khreshatic</li>
+                            <li>mon-fri: 9:00 - 18:00</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3 col-6">
+                        <h4>Contacts</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="tel:0662506636">066-250-66-36</a></li>
+                            <li><a href="tel:0662503666">066-250-36-66</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3 col-6">
+                        <h4>Follow us</h4>
+                        <ul class="footer-icons">
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <button id="top">
+        <i class="fa-solid fa-angles-up"></i>
+    </button>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/owlcarousel/owl.carousel.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+
+
+        fetch('assets/js/countries.json')
+            .then((res) => res.json())
+            .then((json) => {
+                let html = ""
+                console.log(json)
+
+                json["countries"].forEach((el) => {
+                    html += `<option value="${el.code}">${el.name}</option>`
+                })
+                document.getElementById('country').innerHTML = html
+            })
+
+    </script>
+</body>
+
+</html>
