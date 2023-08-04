@@ -14,6 +14,34 @@ document.getElementById("cart-open").addEventListener("click", (e) => {
     offcanvasCart.toggle();
 })
 
+const navLinks = document.querySelectorAll(".nav-item > .nav-link")
+
+navLinks.forEach(function(e){
+    e.addEventListener('click', function (event){
+        event.preventDefault();
+
+        const targetId = e.textContent.toLowerCase(); // Получаем идентификатор раздела из текста ссылки
+        const targetSection = document.getElementById(targetId); // Находим соответствующий элемент
+
+        if (targetSection) {
+            const offset = 80; // Смещение вверх на 80px
+            const targetPosition = targetSection.getBoundingClientRect().top + window.pageYOffset;
+            window.scrollTo({
+                top: targetPosition - offset,
+                behavior: 'smooth'
+            });
+/*         let offcanvas  = document.querySelector(".offcanvas ")
+        let fade = document.querySelector(".fade")
+        offcanvas.classList.toggle("show")
+        fade.classList.toggle("offcanvas-backdrop") */
+/* 
+        let offcanvas  = document.querySelector(".offcanvas ")
+        offcanvas.classList.toggle("show") */
+
+        }
+    })
+})
+
 document.querySelectorAll('.closecart').forEach(item => {
     item.addEventListener("click", (e) => {
         e.preventDefault()
@@ -90,3 +118,5 @@ function functionMinArr(){
       }, false)
     })
 })()
+
+
